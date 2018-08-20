@@ -13,6 +13,7 @@ dependencies {
     compile 'com.palantir.configurationresolver:gradle-configuration-resolver-plugin'
     compile 'com.netflix.nebula:nebula-dependency-recommender'
     compile 'net.ltgt.gradle:gradle-errorprone-plugin'
+    compile 'com.diffplug.spotless:spotless-plugin-gradle'
 
     testCompile gradleTestKit()
     testCompile 'com.github.stefanbirkner:system-rules'
