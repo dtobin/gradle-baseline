@@ -317,7 +317,7 @@ dependencyRecommendations {
 
 ## `com.palantir.baseline-format`
 
-Adds a `./gradlew format` task which autoformats all Java files using Spotless and the Eclipse formatter.  This formatter is configured using the `.baseline/spotless/spotless.eclipse.xml` file. Roughly equivalent to:
+Adds a `./gradlew format` task which autoformats all Java files using [Spotless](https://github.com/diffplug/spotless) and the Eclipse formatter.  This formatter is configured using the `.baseline/spotless/spotless.eclipse.xml` file. Roughly equivalent to:
 
 ```gradle
 buildscript {
@@ -339,6 +339,8 @@ spotless {
     }
 }
 ```
+
+_Note: the same formatting rules can be applied from IntelliJ using the [Eclipse Code Formatter](https://github.com/krasa/EclipseCodeFormatter) plugin, although you will have to manually configure it to use the `.baseline/spotless/spotless.eclipse.xml` config file._
 
 ### Copyright Checks
 
